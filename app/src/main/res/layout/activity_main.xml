@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvChat"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/relativeLayout"
+        android:background="@drawable/chat_background"
+        android:layout_alignParentLeft="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="5dp"
+        android:id="@+id/relativeLayout">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etText"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageButton"
+            android:layout_toStartOf="@+id/sendButton"
+            android:layout_toRightOf="@+id/imageButton"
+            android:layout_toLeftOf="@+id/sendButton" />
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/bt_sent"
+            android:layout_alignParentRight="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:src="@android:drawable/ic_menu_camera"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:paddingEnd="10dp"
+            android:layout_alignParentLeft="true"
+            android:paddingRight="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

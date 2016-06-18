@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chat Firebase</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_item">M</string>
+    <string name="bt_sent">Sent</string>
+    <string name="image_picker_error">Resimde bir sorun var. Lütfen başka bir resim seçin.</string>
+</resources>
